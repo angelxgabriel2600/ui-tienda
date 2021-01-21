@@ -42,7 +42,10 @@ public interface OrdenWebService {
 
     /**
      * 
-     * @param orden
+     * @param idCliente
+     * @param idProducto
+     * @param cantidad
+     * @param idOrden
      * @return
      *     returns int
      */
@@ -52,12 +55,21 @@ public interface OrdenWebService {
     @ResponseWrapper(localName = "actualizarOrdenResponse", targetNamespace = "http://ws/", className = "ws.ActualizarOrdenResponse")
     @Action(input = "http://ws/OrdenWebService/actualizarOrdenRequest", output = "http://ws/OrdenWebService/actualizarOrdenResponse")
     public int actualizarOrden(
-        @WebParam(name = "orden", targetNamespace = "")
-        Orden orden);
+        @WebParam(name = "idOrden", targetNamespace = "")
+        int idOrden,
+        @WebParam(name = "idProducto", targetNamespace = "")
+        int idProducto,
+        @WebParam(name = "idCliente", targetNamespace = "")
+        int idCliente,
+        @WebParam(name = "cantidad", targetNamespace = "")
+        int cantidad);
 
     /**
      * 
-     * @param orden
+     * @param idCliente
+     * @param idProducto
+     * @param cantidad
+     * @param idOrden
      * @return
      *     returns int
      */
@@ -67,8 +79,14 @@ public interface OrdenWebService {
     @ResponseWrapper(localName = "agregarOrdenResponse", targetNamespace = "http://ws/", className = "ws.AgregarOrdenResponse")
     @Action(input = "http://ws/OrdenWebService/agregarOrdenRequest", output = "http://ws/OrdenWebService/agregarOrdenResponse")
     public int agregarOrden(
-        @WebParam(name = "orden", targetNamespace = "")
-        Orden orden);
+        @WebParam(name = "idOrden", targetNamespace = "")
+        int idOrden,
+        @WebParam(name = "idProducto", targetNamespace = "")
+        int idProducto,
+        @WebParam(name = "idCliente", targetNamespace = "")
+        int idCliente,
+        @WebParam(name = "cantidad", targetNamespace = "")
+        int cantidad);
 
     /**
      * 

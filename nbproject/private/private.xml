@@ -4,10 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/user/Documents/mr%20frosty/ui-tienda/web/guardarOrden.xhtml</file>
-            <file>file:/C:/Users/user/Documents/mr%20frosty/ui-tienda/web/WEB-INF/eliminarOrden.xhtml</file>
-            <file>file:/C:/Users/user/Documents/mr%20frosty/ui-tienda/src/java/controller/OrdenController.java</file>
             <file>file:/C:/Users/user/Documents/mr%20frosty/ui-tienda/web/index.xhtml</file>
-            <file>file:/C:/Users/user/Documents/mr%20frosty/ui-tienda/web/WEB-INF/faces-config.xml</file>
+            <file>file:/C:/Users/user/Documents/mr%20frosty/ui-tienda/src/java/controller/OrdenController.java</file>
             <file>file:/C:/Users/user/Documents/mr%20frosty/ui-tienda/web/lista.xhtml</file>
         </group>
     </open-files>

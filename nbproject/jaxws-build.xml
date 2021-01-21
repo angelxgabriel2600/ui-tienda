@@ -28,7 +28,7 @@
     </target>
     <target name="wsimport-client-OrdenWebService" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/OrdenWebService"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/OrdenWebService" destdir="${build.generated.dir}/jax-wsCache/OrdenWebService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/OrdenWebService/wsdl/localhost_8080/OrdenWebService/OrdenWebService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/OrdenWebService/OrdenWebService?wsdl" xnocompile="true" xendorsed="true" package="ws">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/OrdenWebService" destdir="${build.generated.dir}/jax-wsCache/OrdenWebService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/OrdenWebService/wsdl/localhost_8080/OrdenWebService/OrdenWebService.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/OrdenWebService/OrdenWebService?wsdl" xnocompile="true" xendorsed="true">
             <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/OrdenWebService/wsdl/localhost_8080/OrdenWebService/OrdenWebService.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/OrdenWebService"/>
         </wsimport>

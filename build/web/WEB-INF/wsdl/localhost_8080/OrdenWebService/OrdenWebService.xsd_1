@@ -2,17 +2,11 @@
 
 <xs:element name="actualizarOrden" type="tns:actualizarOrden"/>
 
-<xs:element name="actualizarOrdenResponse" type="tns:actualizarOrdenResponse"/>
-
 <xs:element name="agregarOrden" type="tns:agregarOrden"/>
-
-<xs:element name="agregarOrdenResponse" type="tns:agregarOrdenResponse"/>
 
 <xs:element name="cliente" type="tns:cliente"/>
 
 <xs:element name="eliminarOrden" type="tns:eliminarOrden"/>
-
-<xs:element name="eliminarOrdenResponse" type="tns:eliminarOrdenResponse"/>
 
 <xs:element name="mostrarCliente" type="tns:mostrarCliente"/>
 
@@ -62,21 +56,9 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="actualizarOrdenResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:int"/>
-</xs:sequence>
-</xs:complexType>
-
 <xs:complexType name="eliminarOrden">
 <xs:sequence>
 <xs:element name="idOrden" type="xs:int"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="eliminarOrdenResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:int"/>
 </xs:sequence>
 </xs:complexType>
 
@@ -130,12 +112,6 @@
 <xs:complexType name="agregarOrden">
 <xs:sequence>
 <xs:element name="orden" type="tns:orden" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="agregarOrdenResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:int"/>
 </xs:sequence>
 </xs:complexType>
 </xs:schema>

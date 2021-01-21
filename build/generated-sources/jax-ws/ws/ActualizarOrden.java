@@ -16,7 +16,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="orden" type="{http://ws/}orden" minOccurs="0"/&gt;
+ *         &lt;element name="idOrden" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="idProducto" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="idCliente" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="cantidad" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -27,34 +30,80 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "actualizarOrden", propOrder = {
-    "orden"
+    "idOrden",
+    "idProducto",
+    "idCliente",
+    "cantidad"
 })
 public class ActualizarOrden {
 
-    protected Orden orden;
+    protected int idOrden;
+    protected int idProducto;
+    protected int idCliente;
+    protected int cantidad;
 
     /**
-     * Obtiene el valor de la propiedad orden.
+     * Obtiene el valor de la propiedad idOrden.
      * 
-     * @return
-     *     possible object is
-     *     {@link Orden }
-     *     
      */
-    public Orden getOrden() {
-        return orden;
+    public int getIdOrden() {
+        return idOrden;
     }
 
     /**
-     * Define el valor de la propiedad orden.
+     * Define el valor de la propiedad idOrden.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Orden }
-     *     
      */
-    public void setOrden(Orden value) {
-        this.orden = value;
+    public void setIdOrden(int value) {
+        this.idOrden = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad idProducto.
+     * 
+     */
+    public int getIdProducto() {
+        return idProducto;
+    }
+
+    /**
+     * Define el valor de la propiedad idProducto.
+     * 
+     */
+    public void setIdProducto(int value) {
+        this.idProducto = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad idCliente.
+     * 
+     */
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    /**
+     * Define el valor de la propiedad idCliente.
+     * 
+     */
+    public void setIdCliente(int value) {
+        this.idCliente = value;
+    }
+
+    /**
+     * Obtiene el valor de la propiedad cantidad.
+     * 
+     */
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    /**
+     * Define el valor de la propiedad cantidad.
+     * 
+     */
+    public void setCantidad(int value) {
+        this.cantidad = value;
     }
 
 }

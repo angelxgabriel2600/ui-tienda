@@ -58,7 +58,10 @@
 
 <xs:complexType name="actualizarOrden">
 <xs:sequence>
-<xs:element name="orden" type="tns:orden" minOccurs="0"/>
+<xs:element name="idOrden" type="xs:int"/>
+<xs:element name="idProducto" type="xs:int"/>
+<xs:element name="idCliente" type="xs:int"/>
+<xs:element name="cantidad" type="xs:int"/>
 </xs:sequence>
 </xs:complexType>
 
@@ -129,7 +132,10 @@
 
 <xs:complexType name="agregarOrden">
 <xs:sequence>
-<xs:element name="orden" type="tns:orden" minOccurs="0"/>
+<xs:element name="idOrden" type="xs:int"/>
+<xs:element name="idProducto" type="xs:int"/>
+<xs:element name="idCliente" type="xs:int"/>
+<xs:element name="cantidad" type="xs:int"/>
 </xs:sequence>
 </xs:complexType>
 
